@@ -32,10 +32,10 @@ body {
     padding-right: 15px;
 }
 .col-1 {
-    width:8.3333%;
+    width:20%;
 }
 .col-2 {
-    width: 16.6667%;
+    width: 80%;
 }
 .col-3 {
     width: 25%;
@@ -43,7 +43,12 @@ body {
 .col-6 {
     width: 50%;
 }
+.logo {
+    padding-top: 8px;
+}
+
 .menu li {
+    position: relative;
     float: left;
     width: 25%;
     border-left: 1px solid #2c71b8;
@@ -63,4 +68,124 @@ body {
 .menu a:hover {
     background-color: #2c71b8;
     color: white;
+}
+.arrow {
+    position: relative;
+    top: -5px;
+    left: 5px;
+    border: solid #2c71b8;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+}
+a:hover .arrow {
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 2px;
+    transform: rotate(45deg);
+}
+.search-con {
+    border: 1px solid #2c71b8;
+    height: 40px;
+    width: 200px;
+    margin: 5px 0;
+}
+.search {
+    width: 140px;
+    font-size: 21px;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    text-transform: lowercase;
+    margin: 6px 0 6px 20px;
+    outline: none;
+    border: none;
+}
+.search::placeholder {
+    color: #2c71b8;
+}
+.search-icon {
+    border: none;
+    float: right;
+    background-color: #2c71b8;
+    width: 30px;
+    height: 30px;
+    background-image: url(images/search.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 4px 4px 5px 0;
+}
+.search-icon:hover {
+    background-color: #0481ff;
+    cursor: pointer;
+}
+.cart {
+    position: absolute;
+    margin: 5px 0;
+    float: right;
+    background-color: white;
+    width: 40px;
+    height: 40px;
+    background-image: url(images/cart.png);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.cart:hover {
+    background-color: #2c71b8;
+    background-image: url(images/cart-white.png);
+}
+.cart-q {
+    position: relative;
+    top: -5px;
+    left: -10px;
+    background-color: #2c71b8;
+    width: 20px;
+    height: 20px;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    border-radius: 50%;
+}
+
+.col-3:last-child {
+    padding-left: 0;
+}
+.col-1{
+    padding-right: 0;
+}
+li ul {
+    display: none;
+}
+.menu li ul a {
+    background: #2c71b8;
+    color: white;
+    height: 40px;
+    line-height: 40px;
+    text-align: left;
+    padding-left: 30px;
+}
+.menu li ul a:hover {
+    background: white;
+    color: #2c71b8;
+}
+li:hover ul {
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: -1px;
+}
+.submenu li {
+    width: 285px;
+    background: #2c71b8;
+    color: white;
+    border-left: none;
+}
+.submenu li:first-child{
+    padding-top: 25px;
+}
+.submenu li:last-child {
+    padding-bottom: 25px;
 }
