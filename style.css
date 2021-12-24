@@ -21,7 +21,7 @@ body {
     margin-left: -15px;
     margin-right: -15px;
 }
-.row::after, .menu::after {
+.row::after, .menu::after, .section-product-sort-row:after, .section-product-items-row:after, .nav ul::after {
     content: "";
     display: block;
     clear: both;
@@ -42,6 +42,9 @@ body {
 }
 .col-6 {
     width: 50%;
+}
+.col-9 {
+    width: 75%;
 }
 .logo {
     padding-top: 8px;
@@ -101,6 +104,7 @@ a:hover .arrow {
     margin: 6px 0 6px 20px;
     outline: none;
     border: none;
+    color: #2c71b8;
 }
 .search::placeholder {
     color: #2c71b8;
@@ -130,6 +134,7 @@ a:hover .arrow {
     background-image: url(images/cart.png);
     background-position: center;
     background-repeat: no-repeat;
+    cursor: pointer;
 }
 
 .cart:hover {
@@ -200,4 +205,268 @@ li:hover ul {
     display: inline-block;
     padding: 2px;
     transform: rotate(45deg);
+}
+.slider {
+    height: 400px;
+    background-color: rgba(35, 90, 147, 0.5);
+    border-top: 1px solid #fff;
+    border-bottom: 1px solid #fff;
+}
+.article {
+    width: 1200px;
+    margin: 0 auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}   
+.filter {
+    background-color: rgba(86, 141, 198, 0.5);
+    height: 845px;
+    width: 270px;
+    margin-right: 15px;
+    border-right: 1px solid #fff;
+    padding: 30px;
+}
+.section {
+    padding: 30px 0 90px 0;
+}
+.nav ul {
+    list-style: none;  
+}
+.nav li a{
+    font-size: 14px;
+    color: #acc1dd;
+    float: left;
+    text-decoration: none;
+}
+.section-product-name {
+    color: #fff;
+    font-size: 48px;
+    font-weight: 600;
+    float: left;
+}
+
+.section-product-sort{
+    margin: 20px 0 50px 0;
+}
+.section-product-sortby {
+    float: right;
+    width: 270px;
+    height: 40px;
+    border: 1px solid #fff;
+}
+.section-product-sortby p {
+    color: white;
+    font-size: 21px;
+    line-height: 40px;
+    padding-left: 19px;
+}
+.product-container {
+    float: left;
+    height: 650px;
+    width: 270px;
+    border: 1px solid #fff;
+}
+.product-item-picture {
+    width: 100%;
+    height: 180px;
+    border-bottom: 1px solid #fff;
+    background-color: rgba(255, 255, 255, 0.75);
+    /* background-position: center;
+    background-image: url(images/monitor.png);
+    background-repeat: no-repeat; */
+    position: relative;
+}
+.product-item-picture img {
+    position: absolute;
+    margin: auto;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+}
+.picture-icon-first {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 10px;
+    right: 10px;
+    border: 1px solid #548cc5;
+    background-image: url(images/focusblue.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+.picture-icon-second {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    top: 50px;
+    right: 10px;
+    border: 1px solid #548cc5;
+    background-image: url(images/heartblue.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    cursor: pointer;
+}
+
+.picture-icon-first:hover {
+    background-color: #548cc5;
+    background-image: url(images/focuswhite.png);
+}
+
+.picture-icon-second:hover {
+    background-color: #548cc5;
+    background-image: url(images/heartwhite.png);
+}
+
+.product-item-name {
+    padding: 16px;
+    color: #fff;
+}
+h3 {
+    font-size: 30px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.product-container {
+    margin: 0 15px 30px 15px;
+}
+.section-product-items {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.product-item-description {
+    font-size: 21px;
+    line-height: 1.1em;
+    padding-bottom: 10px;
+}
+.product-item-charact li{
+    padding-bottom: 10px;
+}
+.product-item-price {
+    font-weight: 600;
+    text-align: center;
+    font-size: 48px;
+    margin: 20px 0 10px 0;
+}
+.product-item-buttons {
+    margin: 30px 10px 20px 10px;
+}
+.product-item-buttons button{
+    width: 210px;
+    height: 50px;
+    background-color: transparent;
+    border: none;
+    outline: 1px solid #fff;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-bottom: 15px;
+}
+.product-item-buttons button:last-child {
+    background-color:rgba(255, 255, 255, 0.2);
+    background-image: url(images/cart-white.png);
+    background-repeat: no-repeat;
+    background-position-x: 92%;
+    background-position-y: 45%;
+}
+
+.product-item-buttons button:last-child:hover{
+    background-image: url(images/cart.png);
+}
+.product-item-buttons button:hover {
+    background-color: #fff;
+    color: #548cc5;
+}
+sup {
+    font-size: 31px;  
+}
+.more-products a {
+    font-size: 36px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+
+}
+.more-products {
+    text-align: center;
+}
+.footer {
+    background-color: rgba(255, 255, 255, 0.75);
+    font-size: 21px;
+    color: #548cc5;
+    padding: 25px 0;
+    min-width: 1200px;
+    text-align: center;
+    height: 100px;
+    line-height: 50px;
+}
+
+.option {
+    display: block;
+    margin-bottom: 18px;
+    cursor: pointer;
+  }
+.option:last-child {
+    margin-bottom: 0;
+}
+  .check-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  }
+  .check-box {
+    position: absolute;
+    border:1px solid white;
+    width: 15px;
+    height: 15px;
+    margin-left: -1.2em;
+  }
+  .check {
+    padding-left: 1.2em;
+  }
+  .check-input:checked + .check-box {
+    background-color: white;
+  }
+
+.filter-content {
+    color: white;
+    font-size: 21px;
+}
+
+.filter-title {
+    margin-bottom: 25px;
+}
+.filter-checkbox {
+    margin-bottom: 50px;
+}
+.filter-checkbox:last-child {
+    margin-bottom: 0;
+}
+.more-options a{
+    text-decoration: none;
+    color: white;
+}
+.more-options {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.submit-button {
+    width: 210px;
+    height: 50px;
+    background-color: #2c71b8;
+    border: none;
+    outline: 1px solid #fff;
+    color: #fff;
+    font-size: 21px;
+    font-weight: 600;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+}
+.submit-button:hover {
+    background-color: white;
+    color:#2c71b8;
 }
