@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shop-Project</title>
+    <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -50,7 +53,7 @@
                     </div>
                     <div class="col-1">
                         <div class="cart">
-                            <div class="cart-q">4
+                            <div class="cart-q" id="products-count">0
                             </div>
                         </div>
                     </div>
@@ -59,7 +62,20 @@
         </div>
     </header>
     <main class="main">
-        <div class="slider"></div>
+        <div class="slider-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="slider">
+                            <div>Slider #1</div>
+                            <div>Slider #2</div>
+                            <div>Slider #3</div> 
+                            <div>Slider #4</div> 
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <article class="article">
             <div class="row">
                 <div class="col-3">
@@ -178,8 +194,8 @@
                                                 $599<sup>25</sup>
                                             </div>
                                             <div class="product-item-buttons">
-                                                <button>MORE DETAILS</button>
-                                                <button>ADD TO CART &nbsp;&nbsp;</button>
+                                                <button class="btn-details">MORE DETAILS</button>
+                                                <button class="btn-cart">ADD TO CART &nbsp;&nbsp;</button>
                                             </div>
                                     </div>
                                 </div>
@@ -201,8 +217,8 @@
                                                 $1250<sup>99</sup>
                                             </div>
                                             <div class="product-item-buttons">
-                                                <button>MORE DETAILS</button>
-                                                <button>ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
+                                                <button class="btn-details">MORE DETAILS</button>
+                                                <button class="btn-cart">ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
                                             </div>
                                     </div>
                                 </div>
@@ -224,8 +240,8 @@
                                                 $399<sup>50</sup>
                                             </div>
                                             <div class="product-item-buttons">
-                                                <button>MORE DETAILS</button>
-                                                <button>ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
+                                                <button class="btn-details">MORE DETAILS</button>
+                                                <button class="btn-cart"> ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
                                             </div>
                                     </div>  
                                 </div>
@@ -247,8 +263,8 @@
                                                 $599<sup>25</sup>
                                             </div>
                                             <div class="product-item-buttons">
-                                                <button>MORE DETAILS</button>
-                                                <button>ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
+                                                <button class="btn-details">MORE DETAILS</button>
+                                                <button class="btn-cart">ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
                                             </div>
                                     </div>
                                 </div>
@@ -270,8 +286,8 @@
                                                 $1250<sup>99</sup>
                                             </div>
                                             <div class="product-item-buttons">
-                                                <button>MORE DETAILS</button>
-                                                <button>ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
+                                                <button class="btn-details">MORE DETAILS</button>
+                                                <button class="btn-cart">ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
                                             </div>
                                     </div>
                                 </div>
@@ -293,8 +309,8 @@
                                                 $399<sup>50</sup>
                                             </div>
                                             <div class="product-item-buttons">
-                                                <button>MORE DETAILS</button>
-                                                <button>ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
+                                                <button class="btn-details">MORE DETAILS</button>
+                                                <button class="btn-cart">ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
                                             </div>
                                     </div>  
                                 </div>
@@ -316,8 +332,8 @@
                                                 $599<sup>25</sup>
                                             </div>
                                             <div class="product-item-buttons">
-                                                <button>MORE DETAILS</button>
-                                                <button>ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
+                                                <button class="btn-details">MORE DETAILS</button>
+                                                <button class="btn-cart">ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
                                             </div>
                                     </div>
                                 </div>
@@ -339,8 +355,8 @@
                                                 $1250<sup>99</sup>
                                             </div>
                                             <div class="product-item-buttons">
-                                                <button>MORE DETAILS</button>
-                                                <button>ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
+                                                <button class="btn-details">MORE DETAILS</button>
+                                                <button class="btn-cart">ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
                                             </div>
                                     </div>
                                 </div>
@@ -362,8 +378,8 @@
                                                 $399<sup>50</sup>
                                             </div>
                                             <div class="product-item-buttons">
-                                                <button>MORE DETAILS</button>
-                                                <button>ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
+                                                <button class="btn-details">MORE DETAILS</button>
+                                                <button class="btn-cart">ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
                                             </div>
                                     </div>  
                                 </div>
@@ -378,5 +394,24 @@
         </article>
     </main>
     <footer class="footer">&copy;Copyright 2021</footer>
+    <div class="modal show hide">
+        <div class="modal-block ">
+            <form action="">
+                <div class="btn-close">x</div>
+                <h3>Please call for more details</h3>
+                <div class="form-field">
+                    <input type="text" placeholder="Your name">
+                </div>
+                <div class="form-field">
+                    <input type="text" placeholder="Your phone">
+                </div>
+                <button>Please call</button>
+            </form>
+        </div>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="app.js"></script>
 </body>
 </html>
