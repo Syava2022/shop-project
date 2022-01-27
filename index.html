@@ -7,6 +7,7 @@
     <title>Shop-Project</title>
     <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
     <link rel="stylesheet" href="reset.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
     <link rel="stylesheet" href="style.css">
@@ -175,6 +176,7 @@
                             </div>
                         </div>
                         <div class="section-product-items">
+                            <div div data-aos="fade-up" data-aos-duration="1000">
                             <div class="section-product-items-row">
                                 <div class="product-container">
                                     <div class="product-item-picture">
@@ -192,6 +194,11 @@
                                         </ul>
                                             <div class="product-item-price">
                                                 $599<sup>25</sup>
+                                            </div>
+                                            <div class="product-quantity">
+                                                <button class="decrement-button">-</button>
+                                                <input type="text" value="1" readonly>
+                                                <button class="increment-button">+</button>
                                             </div>
                                             <div class="product-item-buttons">
                                                 <button class="btn-details">MORE DETAILS</button>
@@ -216,6 +223,11 @@
                                             <div class="product-item-price">
                                                 $1250<sup>99</sup>
                                             </div>
+                                            <div class="product-quantity">
+                                                <button class="decrement-button">-</button>
+                                                <input type="text" value="1" readonly>
+                                                <button class="increment-button">+</button>
+                                            </div>
                                             <div class="product-item-buttons">
                                                 <button class="btn-details">MORE DETAILS</button>
                                                 <button class="btn-cart">ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
@@ -238,6 +250,11 @@
                                         </ul>
                                             <div class="product-item-price">
                                                 $399<sup>50</sup>
+                                            </div>
+                                            <div class="product-quantity">
+                                                <button class="decrement-button">-</button>
+                                                <input type="text" value="1" readonly>
+                                                <button class="increment-button">+</button>
                                             </div>
                                             <div class="product-item-buttons">
                                                 <button class="btn-details">MORE DETAILS</button>
@@ -262,6 +279,11 @@
                                             <div class="product-item-price">
                                                 $599<sup>25</sup>
                                             </div>
+                                            <div class="product-quantity">
+                                                <button class="decrement-button">-</button>
+                                                <input type="text" value="1" readonly>
+                                                <button class="increment-button">+</button>
+                                            </div>
                                             <div class="product-item-buttons">
                                                 <button class="btn-details">MORE DETAILS</button>
                                                 <button class="btn-cart">ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
@@ -284,6 +306,11 @@
                                         </ul>
                                             <div class="product-item-price">
                                                 $1250<sup>99</sup>
+                                            </div>
+                                            <div class="product-quantity">
+                                                <button class="decrement-button">-</button>
+                                                <input type="text" value="1" readonly>
+                                                <button class="increment-button">+</button>
                                             </div>
                                             <div class="product-item-buttons">
                                                 <button class="btn-details">MORE DETAILS</button>
@@ -308,6 +335,11 @@
                                             <div class="product-item-price">
                                                 $399<sup>50</sup>
                                             </div>
+                                            <div class="product-quantity">
+                                                <button class="decrement-button">-</button>
+                                                <input type="text" value="1" readonly>
+                                                <button class="increment-button">+</button>
+                                            </div>
                                             <div class="product-item-buttons">
                                                 <button class="btn-details">MORE DETAILS</button>
                                                 <button class="btn-cart">ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
@@ -330,6 +362,11 @@
                                         </ul>
                                             <div class="product-item-price">
                                                 $599<sup>25</sup>
+                                            </div>
+                                            <div class="product-quantity">
+                                                <button class="decrement-button">-</button>
+                                                <input type="text" value="1" readonly>
+                                                <button class="increment-button">+</button>
                                             </div>
                                             <div class="product-item-buttons">
                                                 <button class="btn-details">MORE DETAILS</button>
@@ -354,6 +391,11 @@
                                             <div class="product-item-price">
                                                 $1250<sup>99</sup>
                                             </div>
+                                            <div class="product-quantity">
+                                                <button class="decrement-button">-</button>
+                                                <input type="text" value="1" readonly>
+                                                <button class="increment-button">+</button>
+                                            </div>
                                             <div class="product-item-buttons">
                                                 <button class="btn-details">MORE DETAILS</button>
                                                 <button class="btn-cart">ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
@@ -377,6 +419,11 @@
                                             <div class="product-item-price">
                                                 $399<sup>50</sup>
                                             </div>
+                                            <div class="product-quantity">
+                                                <button class="decrement-button">-</button>
+                                                <input type="text" value="1" readonly>
+                                                <button class="increment-button">+</button>
+                                            </div>
                                             <div class="product-item-buttons">
                                                 <button class="btn-details">MORE DETAILS</button>
                                                 <button class="btn-cart">ADD TO CART &nbsp;&nbsp;<div class="addtocart"></div></button>
@@ -384,6 +431,7 @@
                                     </div>  
                                 </div>
                             </div>
+                        </div>
                         </div>
                         <div class="more-products">
                             <a href="#">Load More...</a>
@@ -393,7 +441,7 @@
             </div>
         </article>
     </main>
-    <footer class="footer">&copy;Copyright 2021</footer>
+    <footer class="footer">&copy;Copyright 2022</footer>
     <div class="modal show hide">
         <div class="modal-block ">
             <form action="">
@@ -409,6 +457,7 @@
             </form>
         </div>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
